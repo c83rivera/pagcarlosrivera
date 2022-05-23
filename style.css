@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*overflow-x: hidden;*/
+}
+.wrapper{
+    overflow: hidden;
+    width: auto;
+    height: 10rem;
+    background-color: gold;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+}
+.brand{
+    margin-top: 0.1rem;
+    font-size: 3rem;
+    color: red;
+}
+.brand span{
+    color: black;
+    font-size: 2.8rem;
+}
+.menu{
+    padding: 4rem;
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+    list-style: none;
+}
+.menu a{
+    margin-top: 1rem;
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+    text-decoration: none ;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.menu a:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: ease-in 0.8s;
+}
+.conatiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main, .about, .portafolio, .contacto{
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    margin: auto;
+    width: auto;
+}
+.main, .portafolio{
+    background-color: black;
+    color: gold;
+}
+.about, .contacto{
+    background-color: gold;
+    color: black;
+}
+.main, .about{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    font-size: 1.5rem;
+    display: grid;
+    width: auto;
+}
+h1{
+    padding: 4rem;
+}
+.main div h3{
+    padding: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: bisque;
+}
+.main img{
+    width: 50rem;
+    height: 50rem;
+}
+.about img{
+    width: 80rem;
+    grid-column: 1/2;
+    height: auto;
+}
+.about-info{
+    grid-column: 2/2;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.about-info h2{
+    font-size: 4rem;
+}
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: brown;
+    margin-top: 20px;
+}
+.portafolio{
+    display: grid;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    font-size: 2.8rem;
+}
+.portafolio-headin img{
+    justify-content: center;
+    width: 22rem;
+    border: 0.5rem solid brown;
+    height: auto;
+    cursor: pointer;
+}
+.contacto{
+    padding: 2rem;
+    font-size: 2rem;
+    justify-content: right;
+}
+.contacto_title img{
+    justify-content: space-between;
+    width: 3;
+    border: 0.3rem solid brown;
+    height: 5rem;
+    cursor: pointer;
+}
+.body{
+    background-color: black;
+}
+.pages2{
+    background-color: black;
+    color: gold;
+    padding: 2rem;
+    font-size: 5rem;
+}
+.pages3{
+    background-color: black;
+    height: 200rem;
+}
+
+@media screen and (max-width: 768px){
+    #featured li{
+        width: 46%
+    }
+}
+    
+@media screen and (max-width: 480px){
+    #featured li{
+        width: 92%
+    }
+}
+
