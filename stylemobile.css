@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    background-color: gold;
+    width: auto;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+    flex-direction: column;
+}
+.brand{
+    display: flex;
+    margin-top: 0.1rem;
+    font-size: 3rem;
+    color: red;
+}
+.brand span{
+    color: black;
+    font-size: 2.8rem;
+}
+.menu{
+    flex-wrap: wrap;
+    padding: 4rem;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    list-style: none;
+}
+.menu a{
+    margin-top: 1rem;
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+    text-decoration: none ;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.menu a:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: ease-in 0.8s;
+    font-size: 3rem;
+}
+.conatiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main, .about, .portafolio, .contacto{
+    height: auto;
+    margin: auto;
+    width: auto;
+}
+.main, .portafolio{
+    background-color: black;
+    color: gold;
+}
+.about, .contacto{
+    background-color: gold;
+    color: black;
+}
+.main, .about{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    width: auto;
+}
+h1{
+    padding: 1rem;
+}
+.main div h3{
+    padding: 2rem;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    color: bisque;
+}
+.main img{
+    width: 20rem;
+    height: 20rem;
+}
+.about{
+    display: flex;
+}
+.about img{
+    width: 10rem;
+    grid-column: 1/2;
+    height: auto;
+}
+.about-info{
+    grid-column: 2/2;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.about-info h2{
+    font-size: 1.5rem;
+}
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: brown;
+    margin-top: 20px;
+}
+.portafolio{
+    justify-content: center;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+}
+.portafolio-headin{
+    display: grid;
+    flex-wrap: wrap;
+}
+.portafolio-headin img{
+    flex-wrap: flex;
+    width: 12rem;
+    border: 0.15rem solid brown;
+    height: auto;
+    cursor: pointer;
+}
+.portafolio-headin img:hover{
+    transform: scale(1.5);
+}
+.contacto{
+    padding: 1rem;
+    font-size: 1.5rem;
+    justify-content: right;
+}
+.contacto_title img{
+    justify-content: space-between;
+    width: 2em;
+    border: 0.2rem solid brown;
+    height: 2em;
+    cursor: pointer;
+}
+.contacto_title img:hover{
+    transform: scale(2);
+}
+.body{
+    background-color: black;
+}
+.pages2{
+    background-color: black;
+    color: gold;
+    padding: 2rem;
+    font-size: 5rem;
+}
+.pages3{
+    background-color: black;
+    height: 200rem;
+}
+#main
+{
+    width: 100%;
+}
+#portafolio
+{
+    width: 50%;
+ }
+#cntacto{
+    width: 50%;
+}
+
