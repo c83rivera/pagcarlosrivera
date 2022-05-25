@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+    flex-direction: row;
+}
+.menu{
+    flex-direction: row;
+}
+.main{
+    display: flex;
+}
+.main img{
+    width: 35rem;
+    height: 35rem;
+}
+.main, .about{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    font-size: 1.5rem;
+    width: auto;
+}
+h1{
+    padding: 3rem;
+}
+.main div h3{
+    padding: 2rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: bisque;
+}
+.about img{
+    width: 30rem;
+}
+.about-info{
+    grid-column: 2/2;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.about-info h2{
+    font-size: 2.5rem;
+}
+.portafolio{
+    font-size: 2rem;
+}
+.portafolio-headin img{
+    width: 18rem;
+    border: 0.3rem solid brown;  
+}
+.contacto{
+    padding: 1.5rem;
+    font-size: 1.8rem;
+}
+.contacto_title img{
+    width: 2.5em;
+    border: 0.22rem solid brown;
+    height: 2.5em;
+}
